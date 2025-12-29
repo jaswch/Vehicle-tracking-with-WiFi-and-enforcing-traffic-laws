@@ -15,9 +15,9 @@
 #include <ESP8266WiFi.h>
 
 // --- Configuration (EDIT THESE) ---
-const char* hotspot_ssid = "Beacon_B";
-const char* hotspot_password = "Hkdpwd@603";
-const char* beacon_ssid = "Beacon_A";
+const char* hotspot_ssid = "Beacon_A";
+const char* hotspot_password = "passwd@123";
+const char* beacon_ssid = "Beacon_B";
 
 // The IP address of your Raspberry Pi on the hotspot network.
 // You will get this when you run the server script on the Pi.
@@ -25,8 +25,6 @@ const char* serverIP = "192.168.x.x";
 const int serverPort = 9999;
 
 String vehicleMAC;
-
-
 // Function to send data to the server
 void sendDataToServer(int rssi1, int rssi2) {
   // Connect to the Wi-Fi hotspot
@@ -87,6 +85,6 @@ void loop() {
   // Send the collected data to the server
   sendDataToServer(rssi_hotspot, rssi_beacon);
 
-  delay(2000); // Wait 2 seconds before next scan
+  delay(2000);
 }
 

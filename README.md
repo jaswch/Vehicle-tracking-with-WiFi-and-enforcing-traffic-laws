@@ -1,5 +1,5 @@
 # Vehicle-tracking-with-WiFi-and-enforcing-traffic-laws
-This project allows you to detect the location of a vehicle using th wifi signals around it. This project was created to participate in D.Y. Patil DPU Inter school fest 2025 in the Future transportation design(model) category for class IX and X students and has won first prize.
+This project allows you to detect the location of a vehicle using the wifi signals around it. This project was created to participate in D.Y. Patil DPU Inter school fest 2025 in the Future transportation design(model) category for class IX and X students and has won first prize.
 
 ![Picture](images/Project.jpg)
 
@@ -11,7 +11,7 @@ This project allows you to detect the location of a vehicle using th wifi signal
 While GPS is a good choice for tracking vehicles it faces issues in densly populated urban areas where the GPS signals bounce on the surfaces of buildings and tall skyscrapers before reaching the satelite this causes a latency and gives innacurate readings, this phenomenon is called as urban canyon effect. To combat this issue we will track vehicles with WiFi and also detect is any vehicle is breaking any traffic laws. WiFi chips are also getting cheaper, efficient and can be integrated easily into vehicles and OEMs can sell kits which will allow consumers to use this technology with ease. Infrastructure for WiFi access points can easily be installed and maintained and costs less than sending a satellite to space, we can even repurpose old computers as WiFi access points. WiFi based tracking wont replace GPS but it will be an extension of it.
 
 ## How does it work
-This project uses RSSI fingerprinting where we initially have to calibrate and create a map for places like intersection, footpath,etc. After calibrating the vehicle will start scanning for networks around it and sends the signal strength of the networks to the server which will then determine the location of the vehicle and see if it is breaking any trafic rules or not, if the .
+This project uses RSSI fingerprinting where we initially have to calibrate and create a map for places like intersection, footpath,etc. After calibrating the vehicle will start scanning for networks around it and sends the signal strength of the networks to the server which will then determine the location of the vehicle and see if it is breaking any traffic rules or not, if the vehicle breaks any traffic rules then the server detects it and stores it in a database.
 
 ## What do you need
 1. ESP8266 (For the vehicle)
